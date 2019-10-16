@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+import Todo from "./components/TodoList";
+import { Provider } from "react-redux";
+import store from "./store";
+
+function App() {
+  return (
+    <Provider store={store}>
+      <Todo />
+    </Provider>
+  );
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

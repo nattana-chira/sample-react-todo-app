@@ -5,6 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import Todo from "./components/TodoList";
 import { Provider } from "react-redux";
 import store from "./store";
+import "antd/dist/antd.css";
 
 function App() {
   return (
